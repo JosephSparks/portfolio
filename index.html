@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archstone Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/531bfb5cc0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="/Users/992156/Documents/GitHub/website/loveriver.JPG" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Extracurriculars</a></li>
+                    <li><a href="#portfolio">Future Plans</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <button class="switch-mode">Switch Mode</button> -->
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Aspiring engineer, physicist, and software developer</p>
+                <h1>Hi, I'm <span id="type" data-text="Joseph Sparks">Joseph Sparks</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!--about-me-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="ski2.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="me">Hello! I'm currently a senior in high school, hoping to pursue studies in physics and mechanical engineering.
+                        I'm a full-time student at Arlington Tech of the Arlington Career Center, as well as Northern Virginia Community College.
+                        If you're interested in me for a position, my resume and contact are located at the bottom of the webpage!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experiences</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development (CIW Certified)</span><br>Designing web apps and interfaces. Earned CIW Certification for Web Development.</li>
+                            <li><span>Intermediate Programming</span><br>Python and Java background with a desire to learn more</li>
+                            <li><span>High-level STEM Background</span><br>Advanced understanding of math, science, and technology. Currently taking dual-enrolled Calculus and Physics at NOVA Community College.</li>
+                            <li><span>Public Speaking and Leadership</span><br>Experience in speaking and leadership through Boy Scouts, Model United Nations, and volunteer roles at school.</li>
+                            <li><span>Bi-literate Chinese and English</span><br>Passed OPI and STAMP test with Intermediate High score for speaking, reading, and writing in Mandarin.</li>
+                            <li><span>Part 107 Certified</span><br>I am certified to operate drones for commercial and private corporations by the FAA.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UPenn Virtual Coding Bootcamp (July 2021)</span><br>Four week virtual program focused on web development.</li>
+                            <li><span>National Security Language Initiative for Youth (NSLI-Y, June-August 2022)</span><br>Foreign exchange program in Kaohsiung, Taiwan.</li>
+                            <li><span>Summer Science Program - Astrophysics</span>Prestigious seven-week research program where participants complete a research paper detailing the orbital elements of an asteroid.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Advanced Diploma at Arlington Tech</span><br>2020 - Present</li>
+                            <li><span>Pursuing Associate's Degree in Computer Science at NOVA</span><br>2021 - Present</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="aboutme.html" class="btn">More About Me</a>
+            </div>
+        </div>
+    </div>
+    <!------------------services-------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Extracurriculars</h1>
+            <div class="services-list">
+                <div class="service-area">
+                    <i class="fas fa-tents"></i>
+                    <h2>Boy Scouts</h2>
+                    <p>I've participated in Scouting since the first grade, and I'm currently an Eagle Scout Candidate member of Troop 104. I serve as Junior Assistant Scoutmaster
+                        and the Order of the Arrow Representative for my troop.
+                    </p>
+                </div>
+                <div class="service-area">
+                    <i class="fa-regular fa-person-running-fast"></i>
+                    <h2>Track and Field</h2>
+                    <p>I run varsity track and field for Wakefield High School. I run the 800m, 4x800m, and 1600m, and I have run at the District, Regional, and State Champsionship for the 4x800m.</p>
+                </div>
+                <div class="service-area">
+                    <i class="fas fa-calculator"></i>
+                    <h2>Tutoring</h2>
+                    <p>I previously served as a member of my school's Learning Leadership Team and helped organize tutoring services for classmates.
+                        I currently tutor various math, science, history, and English courses as well as provide ACT and SAT preparation assistance.
+                    </p>
+                </div>
+            </div>
+            <a href="extracurriculars.html" class="btn">Learn More</a>
+        </div>
+    </div>
+    <!-- ---------------portfolio----------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Future Plans</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="loveriver.JPG" alt="">
+                    <div class="layer">
+                        <h3>Mandarin Chinese Fluency</h3>
+                        <p>I hope to continue exploring and learning more Mandarin throughout my career.
+                            Being able to connect with different kinds of people is valuable as a professional and a passion of mine.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="MIT.jpg" alt="">
+                    <div class="layer">
+                        <h3>Attend University</h3>
+                        <p>I plan to attend a four-year university after graduating high school to pursue a degree in engineering.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="internship.jpg" alt="">
+                    <div class="layer">
+                        <h3>Participate in an internship experience!</h3>
+                        <p>This is where you come in! During my senior year, I hope to conduct an internship experience that will help me gain technical knowledge and skill in engineering.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="future.html" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ---------------------contact-------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>josephsparks0724@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/_josephsparks"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/JosephSparks"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="JLSresume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email", name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <a href="additionalinfo.html" class="btn">Additional Info</a>
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz4rHyoavOcAmCoJzuJF5HaG75z8PLehpSF0SYi5-Bn87b6Y5LHmuM5rfxe-GUgBVRp/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function() {
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script src="switch.js"></script>
+    <script src="tablinks.js"></script>
+    <script src="sidemenu.js"></script>
+</body>
+</html>

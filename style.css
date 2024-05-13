@@ -46,54 +46,6 @@ label:after {
     transition: 0.3s;
 }
 
-#darkmode-toggle {
-    width: 0;
-    height: 0;
-    visibility: hidden;
-}
-
-#darkmode-toggle:checked + label {
-    background: #ebebeb;
-}
-
-#darkmode-toggle:checked + label:after {
-    left: 125px;
-    transform: translateX(-100%);
-    background: linear-gradient(180deg, #ffcc89, #d8860b);
-}
-
-label:active:after {
-    width: 75px;
-}
-
-label svg {
-    position: absolute;
-    width: 70px;
-    top: -10px;
-    z-index: 100;
-}
-
-label svg.moon {
-    width: 50px;
-    top: 2px;
-    fill: #7e7e7e;
-    transition: 0.3s;
-}
-
-label svg.sun {
-    left: 66px;
-    /* top: -10px; */
-    fill: #7e7e7e;
-    transition: 0.3s;
-}
-
-input:checked + label svg.moon {
-    fill: #7e7e7e;
-}
-
-input:checked + label svg.sun {
-    fill: #7e7e7e;
-}
 
 #header {
     width: 100%;
@@ -140,7 +92,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #1cdb22;
+    background: orange;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -182,11 +134,11 @@ nav a i {
     width: 0;
     height: 100%;
     white-space: nowrap;
-    color: #1cdb22;
+    color: orange;
     overflow: hidden;
     position: absolute;
     content: attr(data-text);
-    border-right: 2px solid #1cdb22;
+    border-right: 2px solid orange;
     -webkit-text-stroke: 0vw #f7f7fe;
     animation: animate 6s linear infinite;
 }
@@ -251,7 +203,7 @@ nav a i {
     content: '';
     width: 0;
     height: 3px;
-    background: #1cdb22;
+    background: orange;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -268,7 +220,7 @@ nav a i {
 }
 
 .tab-contents ul li span {
-    color: #429445;
+    color: darkorange;
     font-size: 14px;
 }
 
@@ -362,7 +314,7 @@ nav a i {
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), #1cdb22);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), orange);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -406,7 +358,7 @@ nav a i {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #1cdb22;
+    border: 1px solid orange;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -415,7 +367,7 @@ nav a i {
 }
 
 .btn:hover {
-    background: #1cdb22;
+    background: orange;
 }
 
 /* ---------------------------contact----------------------------- */
@@ -432,7 +384,7 @@ nav a i {
 }
 
 .contact-left p i{
-    color: #1cdb22;
+    color: orange;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -451,7 +403,7 @@ nav a i {
 }
 
 .social-icons a:hover {
-    color: #1cdb22;
+    color: orange;
     transform: translateY(-5px);
 }
 
@@ -462,7 +414,7 @@ nav a i {
 
 .btn.btn2 {
     display: inline-block;
-    background: #1cdb22;
+    background: orange;
 }
 
 .contact-right form {
@@ -528,7 +480,7 @@ nav .fas {
     }
 
     nav ul {
-        background: #1cdb22;
+        background: orange;
         position: fixed;
         top: 0;
         right: -200px;
